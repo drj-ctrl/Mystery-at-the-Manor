@@ -2,23 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mystery Manor Images</title>
+  <title>Mystery Manor Images Gallery</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    body { font-family: Arial, sans-serif; margin: 2em; }
+    body { font-family: Arial, sans-serif; margin: 2em; background: #f8f9fa;}
     h1 { color: #334; }
-    code { background: #f3f3f3; padding: 2px 6px; border-radius: 4px; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1em;
+    }
+    .gallery-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 8px;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 6px #0001;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      max-height: 120px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      background: #eee;
+      box-shadow: 0 2px 4px #0001;
+    }
+    .filename {
+      font-size: 0.96em;
+      word-break: break-all;
+      margin-bottom: 2px;
+    }
+    .url-link {
+      font-size: 0.78em;
+      color: #127cc1;
+      text-decoration: underline;
+      display: block;
+      margin-top: 3px;
+    }
   </style>
 </head>
 <body>
-  <h1>Mystery Manor Images</h1>
-  <p>This is the image repository for your game assets.</p>
-  <ul>
-    <li>To use an image, find the exact file name in <a href="https://github.com/drj-ctrl/Mystery_Manor_Images" target="_blank">the repo on GitHub</a>.</li>
-    <li>Construct the image URL as:<br>
-      <code>https://drj-ctrl.github.io/Mystery_Manor_Images/&lt;your-image-file&gt;</code>
-      <br>(replace <code>&lt;your-image-file&gt;</code> with the exact name and extension)
-    </li>
-    <li>If you want a gallery or image list here in the future, you can add it any time!</li>
-  </ul>
+  <h1>Mystery Manor Images Gallery</h1>
+  <p>This is a static gallery of all image assets in this repository.<br>
+  <b>Tip:</b> Click an image to open it in a new tab.</p>
+  
+  <div class="gallery">
+    <!-- Add a new .gallery-item for each image! -->
+    <div class="gallery-item">
+      <a href="https://drj-ctrl.github.io/Mystery_Manor_Images/Blue_Flame_image.png" target="_blank" title="View full size">
+        <img src="https://drj-ctrl.github.io/Mystery_Manor_Images/Blue_Flame_image.png" alt="Blue_Flame_image.png">
+      </a>
+      <div class="filename">Blue_Flame_image.png</div>
+      <a href="https://drj-ctrl.github.io/Mystery_Manor_Images/Blue_Flame_image.png" target="_blank" class="url-link">Direct link</a>
+    </div>
+    <!-- Example: add more images below -->
+    <!--
+    <div class="gallery-item">
+      <a href="https://drj-ctrl.github.io/Mystery_Manor_Images/another_image.jpg" target="_blank" title="View full size">
+        <img src="https://drj-ctrl.github.io/Mystery_Manor_Images/another_image.jpg" alt="another_image.jpg">
+      </a>
+      <div class="filename">another_image.jpg</div>
+      <a href="https://drj-ctrl.github.io/Mystery_Manor_Images/another_image.jpg" target="_blank" class="url-link">Direct link</a>
+    </div>
+    -->
+  </div>
+
+  <footer style="margin-top:2em; font-size:0.95em; color:#666;">
+    <hr>
+    <div>
+      <b>How to add images:</b> Manually add new <code>.gallery-item</code> blocks for every image you upload.<br>
+      Images are served from <code>https://drj-ctrl.github.io/Mystery_Manor_Images/</code> and filenames are case-sensitive.
+    </div>
+  </footer>
 </body>
 </html>

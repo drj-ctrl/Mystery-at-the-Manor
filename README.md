@@ -12,8 +12,9 @@ This repository contains image assets for the Mystery Manor project.
   Replace `<image-filename>` with the exact filename and extension (be aware that filenames are case-sensitive).
 
 - **Example:**  
+  [Blue-Flame-image.png](https://drj-ctrl.github.io/Mystery_Manor_Images/Blue-Flame-image.png)  
   ```
-  https://drj-ctrl.github.io/Mystery_Manor_Images/Blue-Flame-Image.png
+  https://drj-ctrl.github.io/Mystery_Manor_Images/Blue-Flame-image.png
   ```
 
 ## Adding Images
